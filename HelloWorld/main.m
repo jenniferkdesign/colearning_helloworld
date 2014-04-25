@@ -7,16 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <math.h>
+#import "console.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        int userInput = getIntegerFromConsole (@"give me a number");
+        if (userInput <10){
+         NSLog (@"input = small");
+          }
+        if (userInput >100){
+         NSLog (@"input = large");
+          }
         
-        // insert code here...
-        NSLog(@"Hello, World!");
         
-    }
+        
     return 0;
 }
-
+}
